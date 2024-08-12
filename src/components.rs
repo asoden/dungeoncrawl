@@ -1,5 +1,5 @@
 pub use crate::prelude::*;
-use std::{collections::HashSet, hash::Hash};
+use std::collections::HashSet;
 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Render {
@@ -8,7 +8,9 @@ pub struct Render {
 }
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub struct Player;
+pub struct Player {
+    pub map_level: u32,
+}
 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Enemy;
